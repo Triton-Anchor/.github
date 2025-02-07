@@ -11,9 +11,25 @@ Triton Anchor Software Kit
 5. [task_state_handler](https://github.com/Triton-Anchor)                    - 
 6. [task_ui_server](https://github.com/Triton-Anchor)                        -
 
+## Guidelines for creating a new TASK package:
+Other than task_General and task_windows_ui, all packages should be made to run in Linux as ROS2 packages.
+Triton Anchor Software Kit -> Ros Package
+These packages/repos are made to support better organization of this distributed software kit.  
+
+- Should include nodes necessary to be runable and testable in isolation
+- Choose to use cpp or python exclusively each package
+- Naming convention:
+     Always prepend description with 'task_' for uniformity (ex: task_<description>)
+     Use all lowercase letters
+     Use '_' as the primary delimeter
+
+- Should include files:
+    - README.txt
+    - test script/node
+
 ## Steps for creating a new TASK package:
 1. Create a new repo in github following the naming convention of other repos
-2. In WSL enter a ros2 workspace src directory and create a new package WITH THE SAME NAME AS THE REPO using the ros2 pkg create build tool
+2. In WSL enter a ros2 workspace src directory and create a new package with the SAME name as the repo using the ros2 pkg create build tool
    ```
    cd ~/ws/src
    
@@ -43,14 +59,4 @@ Triton Anchor Software Kit
    git checkout origin/master -ft
    ```
 
-## Guidelines for creating a new TASK package:
-Other than task_General and task_windows_ui, all packages should be made to run in Linux as ROS2 packages.
-Triton Anchor Software Kit -> Ros Package
-These packages/repos are made to support better organization of this distributed software kit.  
 
-- Should include nodes necessary to be runable and testable in isolation
-- Choose to use cpp or python exclusively each package
-
-- Should include files:
-    - README.txt
-    - test script/node
