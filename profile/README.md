@@ -65,9 +65,11 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
 4. Create and link a git repo to one made in github
    ```
    git init
-   git remote add origin <repo_name>
-   git fetch
-   git checkout origin/master -ft
+   git remote add origin [ssh_link]
+   git branch -M main
+   git add .
+   git commit -m "First Commit"
+   git push -u origin main
    ```
 
 
