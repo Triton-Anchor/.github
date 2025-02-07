@@ -43,7 +43,7 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
 2. In WSL enter a ros2 workspace src directory and create a new package with the SAME name as the repo using the ros2 pkg create build tool
    ```
    cd ~/ws/src
-   
+
    # For python packages:
    ros2 pkg create --build-type ament_python <package_name>
    
@@ -64,6 +64,8 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
    ```
 4. In the package, initialize repo and link to the one made in github
    ```
+   cd ~/ws/src/<package_name>
+   
    git init
    git remote add origin <ssh_link>
    git branch -M main
