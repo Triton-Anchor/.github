@@ -4,8 +4,7 @@ The Triton Anchor Software Kit
 This page links to repos that organize Triton Anchor's code and controls planning.
 Also contained here are guidelines for adding to TASK: Repositories, Packages, and Nodes
 
-[task_General](https://github.com/Triton-Anchor/General)
-     General repo that contains documents and timelines relating to the development/deployment schedule 
+[task_General](https://github.com/Triton-Anchor/General) \n General repo that contains documents and timelines relating to the development/deployment schedule 
      
 [task_windows_ui](https://github.com/Triton-Anchor)
      Front-end UI code block. Built to operate in windows, quickly and cleanly reflect tool states and make requests to the rest of the Tool Control API
