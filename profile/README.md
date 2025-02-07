@@ -4,22 +4,17 @@ The Triton Anchor Software Kit
 This page links to repos that organize Triton Anchor's code and controls planning.
 Also contained here are guidelines for adding to TASK: Repositories, Packages, and Nodes
 
-[task_General](https://github.com/Triton-Anchor/General) \n General repo that contains documents and timelines relating to the development/deployment schedule 
+[task_general](https://github.com/Triton-Anchor/General) contains documents and timelines relating to the development/deployment schedule 
      
-[task_windows_ui](https://github.com/Triton-Anchor)
-     Front-end UI code block. Built to operate in windows, quickly and cleanly reflect tool states and make requests to the rest of the Tool Control API
+[task_windows_ui](https://github.com/Triton-Anchor) is built to operate in windows, quickly and cleanly reflect tool states, and make requests to the rest of the Tool Control API
      
-[task_1x_simulator](https://github.com/Triton-Anchor)
-     Description
+[task_1x_simulator](https://github.com/Triton-Anchor) can be used to simulate serial input from the tool and test the holistic TASK pipeline
      
-[task_1x_client](https://github.com/Triton-Anchor/task_1x_client)
-     Description
+[task_1x_client](https://github.com/Triton-Anchor/task_1x_client) handles ___
      
-[task_state_handler](https://github.com/Triton-Anchor)
-     Description
+[task_state_handler](https://github.com/Triton-Anchor) handles ___
      
-[task_ui_server](https://github.com/Triton-Anchor)
-     Description
+[task_ui_server](https://github.com/Triton-Anchor) handles ___
 
 ## Terms:
 
