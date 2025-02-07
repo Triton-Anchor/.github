@@ -16,25 +16,21 @@ Triton Anchor Software Kit
 2. In WSL enter a ros2 workspace src directory and create a new package WITH THE SAME NAME AS THE REPO using the ros2 pkg create build tool
    ```
    cd ~/ws/src
-   ```
-   For python packages
-   ```
+   
+   # For python packages:
    ros2 pkg create --build-type ament_python <package_name>
-   ```
-   For c++ packages
-   ```
+   
+   # For c++ packages:
    ros2 pkg create --build-type ament_cmake <package_name>
    ```
 3. Navigate back to the base directory and build the package
    ```
    cd ~/ws
-   ```
-   If using a custom bash:
-   ```
+   
+   # If using a custom bash:
    rebuild
-   ```
-   Otherwise:
-   ```
+   
+   # Otherwise:
    colcon build
    source install/setup.bash
    source /opt/ros/jazzy/setup.bash
