@@ -1,19 +1,23 @@
 # Welcome to TASK:
 The Triton Anchor Software Kit
 
+<br />
 
 This page links to repos that organize Triton Anchor's code and controls planning.
 Also contained here are guidelines for adding to TASK: Repositories, Packages, and Nodes
 
+<br />
 
 [task_general](https://github.com/Triton-Anchor/General) contains documents and timelines relating to the development/deployment schedule 
      
 [task_windows_ui](https://github.com/Triton-Anchor) is built to operate in windows, quickly and cleanly reflect tool states, and make requests to the rest of the Tool Control API
 
+<br />
 
 Other than task_General and task_windows_ui, all packages are run in a Linux environemt (WSL) as ROS2 packages.
 
-     
+<br />
+
 [task_1x_simulator](https://github.com/Triton-Anchor) can be used to simulate serial input from the tool and test the holistic TASK pipeline
      
 [task_1x_client](https://github.com/Triton-Anchor/task_1x_client) handles ___
@@ -22,6 +26,7 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
      
 [task_ui_server](https://github.com/Triton-Anchor) handles ___
 
+<br />
 
 ## Terms:
 
