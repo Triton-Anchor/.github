@@ -50,7 +50,7 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
    # For c++ packages:
    ros2 pkg create --build-type ament_cmake <package_name>
    ```
-3. Navigate back to the base directory and build the package
+3. Build the package in the base directory
    ```
    cd ~/ws
    
@@ -62,13 +62,13 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
    source install/setup.bash
    source /opt/ros/jazzy/setup.bash
    ```
-4. Create and link a git repo to one made in github
+4. In the package, initialize repo and link to the one made in github
    ```
    git init
-   git remote add origin [ssh_link]
+   git remote add origin <ssh_link>
    git branch -M main
    git add .
-   git commit -m "First Commit"
+   git commit -m "First commit"
    git push -u origin main
    ```
 
