@@ -18,6 +18,8 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
 
 <br />
 
+[task_core](https://github.com/Triton-Anchor) contains base definitions, maps and constructors
+
 [task_1x_simulator](https://github.com/Triton-Anchor) can be used to simulate serial input from the tool and test the holistic TASK pipeline
      
 [task_1x_client](https://github.com/Triton-Anchor/task_1x_client) handles ___
