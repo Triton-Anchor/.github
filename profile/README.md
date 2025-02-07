@@ -31,16 +31,12 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
 ## Terms:
 
 ## Guidelines for creating a new TASK package:
-
-- Should include nodes necessary to be runable and testable in isolation
-- Choose to use cpp or python exclusively each package
 - Naming convention:
      - Always prepend description with 'task_' for uniform distinction from other ROS2 packages
      - Use snake_case: all lower case letters and with '_' as the primary delimeter
-
+- Choose to use cpp or python exclusively for each package
 - Should include files:
-    - README.txt
-    - test script/node
+    - README.txt that includes instructions for running package in isolation
 
 ## Steps for creating a new TASK package:
 1. Create a new repo in github following the naming convention of other repos
