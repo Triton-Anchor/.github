@@ -14,38 +14,38 @@ Triton Anchor Software Kit
 ## Steps for creating a new TASK package:
 1. Create a new repo in github following the naming convention of other repos
 2. In WSL enter a ros2 workspace src directory and create a new package WITH THE SAME NAME AS THE REPO using the ros2 pkg create build tool
-   '''
+   ```
    cd ~/ws/src
-   '''
+   ```
    For python packages
-   '''
+   ```
    ros2 pkg create --build-type ament_python <package_name>
-   '''
+   ```
    For c++ packages
-   '''
+   ```
    ros2 pkg create --build-type ament_cmake <package_name>
-   '''
+   ```
 3. Navigate back to the base directory and build the package
-   '''
+   ```
    cd ~/ws
-   '''
+   ```
    If using a custom bash:
-   '''
+   ```
    rebuild
-   '''
+   ```
    Otherwise:
-   '''
+   ```
    colcon build
    source install/setup.bash
    source /opt/ros/jazzy/setup.bash
-   '''
+   ```
 4. Create and link a git repo to one made in github
-   '''
+   ```
    git init
    git remote add origin <repo_name>
    git fetch
    git checkout origin/master -ft
-   '''
+   ```
 
 ## Guidelines for creating a new TASK package:
 Other than task_General and task_windows_ui, all packages should be made to run in Linux as ROS2 packages.
