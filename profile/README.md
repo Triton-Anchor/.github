@@ -7,6 +7,8 @@ Also contained here are guidelines for adding to TASK: Repositories, Packages, a
 [task_general](https://github.com/Triton-Anchor/General) contains documents and timelines relating to the development/deployment schedule 
      
 [task_windows_ui](https://github.com/Triton-Anchor) is built to operate in windows, quickly and cleanly reflect tool states, and make requests to the rest of the Tool Control API
+
+Other than task_General and task_windows_ui, all packages are run in a Linux environemt (WSL) as ROS2 packages.
      
 [task_1x_simulator](https://github.com/Triton-Anchor) can be used to simulate serial input from the tool and test the holistic TASK pipeline
      
@@ -19,9 +21,6 @@ Also contained here are guidelines for adding to TASK: Repositories, Packages, a
 ## Terms:
 
 ## Guidelines for creating a new TASK package:
-Other than task_General and task_windows_ui, all packages should be made to run in Linux as ROS2 packages.
-Triton Anchor Software Kit -> Ros Package
-These packages/repos are made to support better organization of this distributed software kit.  
 
 - Should include nodes necessary to be runable and testable in isolation
 - Choose to use cpp or python exclusively each package
