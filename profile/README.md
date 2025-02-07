@@ -31,11 +31,11 @@ Other than task_General and task_windows_ui, all packages are run in a Linux env
 ## Terms:
 
 ## Guidelines for creating a new TASK package:
-Naming convention:
+Naming convention:<br />
      - Always prepend description with 'task_' for uniform distinction from other ROS2 packages
      - Use snake_case: all lower case letters and with '_' as the primary delimeter
-Choose to use cpp or python exclusively for each package
-Should include files:
+Choose to use cpp or python exclusively for each package<br />
+Should include files:<br />
     - README.txt that includes instructions for running package in isolation
 
 ## Steps for creating a new TASK package:
