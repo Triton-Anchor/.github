@@ -26,9 +26,9 @@ These packages/repos are made to support better organization of this distributed
 - Should include nodes necessary to be runable and testable in isolation
 - Choose to use cpp or python exclusively each package
 - Naming convention:
-     Always prepend description with 'task_' for uniformity (ex: task_<description>)
-     Use all lowercase letters
-     Use '_' as the primary delimeter
+     - Always prepend description with 'task_' for uniformity (ex: task_<description>)
+     - Use all lowercase letters
+     - Use '_' as the primary delimeter
 
 - Should include files:
     - README.txt
