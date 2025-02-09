@@ -21,7 +21,7 @@ All other repositories run in a Linux environemt (WSL) as ROS2 packages.
 
 [task_ui_server](https://github.com/Triton-Anchor)
 
-## Steps for creating a new TASK repository/package:
+## Creating a TASK repository/package:
 
 ### Guidelines:
 Prepend package name with 'task_' for consistency and distinction from other ROS2 packages
@@ -69,5 +69,5 @@ Include a README.md that includes instructions for running the package in isolat
    git push -u origin main
    ```
    
-## Steps for creating a new TASK node:
+## Creating a TASK node:
 
