@@ -3,13 +3,9 @@ The Triton Anchor Software Kit
 
 ### Repositories:
 
-<br />
 [task_general](https://github.com/Triton-Anchor/General) contains no code and exists as a place to organize the deployment and development timeline.
-<br />
 
-<br />
 [task_windows_ui](https://github.com/Triton-Anchor) is the front-end location of the tool control software. It is built to run in windows, offer a responsive interface, and communicate with the rest of TASK's API.
-<br />
 
 <br />
 All other packages run in a Linux environemt (WSL) as ROS2 packages.
