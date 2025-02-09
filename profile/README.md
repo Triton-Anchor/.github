@@ -24,13 +24,10 @@ All other repositories run in a Linux environemt (WSL) as ROS2 packages.
 ## Creating a TASK repository/package:
 
 ### Guidelines:
-Prepend package name with 'task_' for consistency and distinction from other ROS2 packages
-
-snake_case: all lower case letters with '_' as the primary delimeter
-
-Choose beforehand to use cpp or python exclusively for each package
-
-Include a README.md with instructions for running the package in isolation
+- Prepend package name with 'task_' for consistency and distinction from other ROS2 packages
+- snake_case: all lower case letters with '_' as the primary delimeter
+- Choose beforehand to use cpp or python exclusively for each package
+- Include a README.md with instructions for running the package in isolation
 
 ### Process:
 
