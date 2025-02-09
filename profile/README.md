@@ -30,7 +30,7 @@ snake_case: all lower case letters with '_' as the primary delimeter
 
 Choose beforehand to use cpp or python exclusively for each package
 
-Include a README.md that includes instructions for running the package in isolation
+Include a README.md with instructions for running the package in isolation
 
 ### Process:
 
