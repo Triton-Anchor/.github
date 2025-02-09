@@ -1,21 +1,22 @@
 # Welcome to TASK:
 The Triton Anchor Software Kit
 
+### Repositories:
+
 <br />
-
-This page links to repos that organize Triton Anchor's code and controls planning.
-Also contained here are guidelines for adding to TASK: Repositories, Packages, and Nodes
-
+task_general contains no code and exists as a place to organize the deployment and development timeline.
 <br />
 
 [task_general](https://github.com/Triton-Anchor/General)
-     
+
+<br />
+task_windows_ui is the front-end location of the tool control software. It is built to run in windows, offer a responsive interface, and communicate with the rest of TASK's API.
+<br />
+
 [task_windows_ui](https://github.com/Triton-Anchor)
 
 <br />
-
-Other than task_General and task_windows_ui, all packages run in a Linux environemt (WSL) as ROS2 packages.
-
+All other packages run in a Linux environemt (WSL) as ROS2 packages.
 <br />
 
 [task_core](https://github.com/Triton-Anchor)
@@ -28,18 +29,16 @@ Other than task_General and task_windows_ui, all packages run in a Linux environ
 
 [task_ui_server](https://github.com/Triton-Anchor)
 
-<br />
-
 ## Terms:
 
-## Steps for creating a new TASK package:
+## Steps for creating a new TASK repository/package:
 
 ### Guidelines:
-Prepend package name with 'task_' for uniform distinction from other ROS2 packages
+Prepend package name with 'task_' for consistency and distinction from other ROS2 packages
 
-snake_case: all lower case letters and with '_' as the primary delimeter
+snake_case: all lower case letters with '_' as the primary delimeter
 
-Choose to use cpp or python exclusively for each package
+Choose beforehand to use cpp or python exclusively for each package
 
 Include a README.md that includes instructions for running the package in isolation
 
@@ -79,5 +78,6 @@ Include a README.md that includes instructions for running the package in isolat
    git commit -m "First commit"
    git push -u origin main
    ```
-
+   
+## Steps for creating a new TASK node:
 
