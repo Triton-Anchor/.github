@@ -57,7 +57,7 @@ Include a README.md with instructions for running the package in isolation
    source install/setup.bash
    source /opt/ros/jazzy/setup.bash
    ```
-4. In the package, initialize repo and link to the one made in github
+4. Initialize a new repo and link it to the one made in github
    ```
    cd ~/ws/src/<package_name>
    
