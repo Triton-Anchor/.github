@@ -17,7 +17,7 @@ All other repositories run in a Linux environemt (WSL) as ROS2 packages.
      
 [task_1x_client](https://github.com/Triton-Anchor/task_1x_client)
      
-[task_state_handler](https://github.com/Triton-Anchor)
+[task_state_manager](https://github.com/Triton-Anchor/task_state_manager)
 
 [task_ui_server](https://github.com/Triton-Anchor)
 
