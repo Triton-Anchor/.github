@@ -76,7 +76,8 @@ A remote lifecycle node listens to a ros service: 'NODE_NAME'/lifecycle to set t
 The name 'Bus Node' refers to a node that is connected to one of the four main data buses in the TASK architecture. These nodes are able to listen to a sub-set of published data topics and direct information to its workers. Each Bus Node has its own type of worker class that it can spawn instances from.
 
 #### Bus Node Worker
-Bus Node Workers (not true nodes) belong to Bus Nodes and are where the module-specific work happens for each node. The number of workers for a given node is tied directly to the number of modules connected. As an example, the Data Aquisition Node is the node that aggregates all transmited data. If a 3x module tool is connected, the Data Aquisition Node will spawn three 'logger' workers to handle the binary data logging for each module.
+Bus Node Workers (not true nodes) belong to Bus Nodes and are where the module-specific work happens for each node. The number of workers for a given node is tied directly to the number of modules connected.
+As an example, the Data Aquisition Node is the node that aggregates all transmited data. If a 3x module tool is connected, the Data Aquisition Node will spawn three 'logger' workers to handle the binary data logging for each module.
 
 #### State Config
 As all core parameters are stored in yaml files, the State Config mixin contains methods that provide nodes with basic state informaiton. Message size, format, parameters, etc. are read into local variables with this mixin.
