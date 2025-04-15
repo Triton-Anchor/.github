@@ -77,6 +77,7 @@ The name 'Bus Node' refers to a node that is connected to one of the four main d
 
 #### Bus Node Worker
 Bus Node Workers (not true nodes) belong to Bus Nodes and are where the module-specific work happens for each node. The number of workers for a given node is tied directly to the number of modules connected.
+
 As an example, the Data Aquisition Node is the node that aggregates all transmited data. If a 3x module tool is connected, the Data Aquisition Node will spawn three 'logger' workers to handle the binary data logging for each module.
 
 #### State Config
