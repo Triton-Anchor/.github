@@ -22,7 +22,7 @@ All other repositories run in a Linux environemt (WSL) as ROS2 packages.
 ## Creating a TASK repository/package:
 
 ### Guidelines:
-- Prepend package name with 'task_' for consistency and distinction from other ROS2 packages
+- Prepend package names with 'task_' for consistency and distinction from other ROS2 packages
 - snake_case: all lower case letters with '_' as the primary delimeter
 - Choose beforehand to use cpp or python exclusively for each package
 - Include a README.md with instructions for running the package in isolation
@@ -65,4 +65,21 @@ All other repositories run in a Linux environemt (WSL) as ROS2 packages.
    ```
    
 ## Creating a TASK node:
+Task nodes are all at their core ROS2 Lifecycle Nodes. The core repository defines low-level mix-ins that add functionality on top of the basic ROS2 lifecycle management.
+When creating a new node, these mixins offer compatibility with the system. As all the mixins are useful in most cases, the 'TaskNode' module rolls everything together into one inheritable base class.
+The mixins add properties as follows:
 
+#### Remote Lifecycle Node
+A remote lifecycle node listens to a ros service: 'NODE_NAME'/lifecycle to set the lifecycle state. This allows a manager to configure many or all nodes at once.
+
+#### Bus Node
+The name 'Bus Node' refers to a node that is connected to one of the four main data buses in the TASK architecture. These nodes are able to listen to a sub-set of published data topics and direct information to its workers. Each Bus Node has its own type of worker class that it can spawn instances from.
+
+#### Bus Node Worker
+Bus Node Workers (not true nodes) belong to Bus Nodes and are where the module-specific work happens for each node. The number of workers for a given node is tied directly to the number of modules connected. As an example, the Data Aquisition Node is the node that aggregates all transmited data. If a 3x module tool is connected, the Data Aquisition Node will spawn three 'logger' workers to handle the binary data logging for each module.
+
+#### State Config
+As all core parameters are stored in yaml files, the State Config mixin contains methods that provide nodes with basic state informaiton. Message size, format, parameters, etc. are read into local variables with this mixin.
+
+### Managers
+To address the decentralized nature of a node-based architecture, the CCT offers a central location for getting and setting parameters that apply system wide. The CCT inherits special 'manager' versions of the listed mixins that allows it to set lifecycle, bus, and state configurations easily.
