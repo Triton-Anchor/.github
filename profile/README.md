@@ -81,7 +81,7 @@ Bus Node Workers (not true nodes) belong to Bus Nodes and are where the module-s
 As an example, the Data Aquisition Node is the node that aggregates all transmited data. If a 3x module tool is connected, the Data Aquisition Node will spawn three 'logger' workers to handle the binary data logging for each module.
 
 #### State Config
-As all core parameters are stored in yaml files, the State Config mixin contains methods that provide nodes with basic state informaiton. Message size, format, parameters, etc. are read into local variables with this mixin.
+As all core parameters are stored in yaml files, the State Config mixin contains methods that provide nodes with easy access to these contents. Message size, format, parameters, etc. are read into local variables with this mixin.
 
 ### Managers
 To address the decentralized nature of a node-based architecture, the CCT offers a central location for getting and setting parameters that apply system wide. The CCT inherits special 'manager' versions of the listed mixins that allows it to set lifecycle, bus, and state configurations easily.
