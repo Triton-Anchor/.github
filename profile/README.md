@@ -2,6 +2,7 @@
 The Triton Anchor Software Kit
 
 ### File Structure:
+'''
 TASK_HOME/
 ├─ back_end/
 ├─ simulation/
@@ -18,9 +19,10 @@ TASK_HOME/
 ├─ templates/
 │  ├─ index.html
 ├─ monolith.py
+'''
 
 ## System Diagram:
-                                                                                 
+'''                                                                            
 ┌────────────────────────────────────┐         ┌────────────┐         ┌─────────┐
 │                                    │         │            │         │         │
 │          RaspberrytPi CM4          ├─────┐   │   Flask    ├────┐    │  .css   │
@@ -34,8 +36,7 @@ TASK_HOME/
 │ DRV││PSM │ │ DRV││PSM │ │ DRV││PSM │     └──►│  TCP sock  │    └───►│  .js    │
 │    ││    │ │    ││    │ │    ││    │         │            │         │         │
 └────┘└────┘ └────┘└────┘ └────┘└────┘         └────────────┘         └─────────┘
-
-
+'''
 
 ### Guidelines:
 - Prepend package names with 'task_' for consistency
